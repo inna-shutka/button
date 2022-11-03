@@ -21,11 +21,10 @@ button {
     color: white;
     font-weight: 500;
     font-size: 16px;
-    border: none;
     border-radius: 8px;
-    box-shadow: 0px 0px 0px 3px transparent;
+    border: none;
+    outline: 3px solid white;
     cursor: pointer;
-    outline: none;
     transition-property: background-color box-shadow;
     transition-timing-function: ease;
     transition-duration: 0.2s;
@@ -37,15 +36,16 @@ button:hover {
 
 button:focus {
     background-color: #5300C9;
-    border: 3px solid #DCC3FF;
+    outline: 3px solid #DCC3FF;
+
 }
 
 button:active {
     background-color: #4400A5;
-    border: none;
 }
 
 button:disabled {
     background-color: #E4E4E4;
     color: #AFACAC;
+    cursor: not-allowed;
 }
